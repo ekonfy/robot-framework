@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.13.3 on win32)" generated="2025-06-10T10:19:39.297120" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Tsel Tests" source="d:\dev\appium\robot uhuy\robot-framework\Tests\login_tsel_tests.robot">
+<test id="s1-t1" name="Open MytelkomselApp" line="9">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-06-10T10:19:39.607254" level="INFO">Open MytelkomselApp</msg>
+<arg>Open MytelkomselApp</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-06-10T10:19:39.606951" elapsed="0.002508"/>
+</kw>
+<kw name="Open Mytelkomsel Application" owner="common">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APPPACKAGE}</arg>
+<arg>appActivity=${APPACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>newCommandTimeout=${NEW_COMMAND_TIMEOUT}</arg>
+<arg>network=true</arg>
+<arg>autoAcceptAllers=true</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-06-10T10:19:39.611278" elapsed="22.965042"/>
+</kw>
+<status status="PASS" start="2025-06-10T10:19:39.610471" elapsed="22.966354"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:04.004042" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.telkomsel.telkomselcm:id/skip_btn"]</msg>
+<arg>//android.widget.Button[@resource-id="com.telkomsel.telkomselcm:id/skip_btn"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-06-10T10:20:02.578130" elapsed="1.426468"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:04.007308" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.telkomsel.telkomselcm:id/skip_btn"]'.</msg>
+<msg time="2025-06-10T10:20:04.139902" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.telkomsel.telkomselcm:id/skip_btn"]</msg>
+<arg>//android.widget.Button[@resource-id="com.telkomsel.telkomselcm:id/skip_btn"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-06-10T10:20:04.005422" elapsed="0.134991"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:05.594400" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/tvOnboardPermissionTitle"]
+xpath criteria: //android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/tvOnboardPermissionTitle"]</msg>
+<arg>//android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/tvOnboardPermissionTitle"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-06-10T10:20:04.141568" elapsed="1.453242"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:05.597609" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/tvOnboardPermissionSkip"]'.</msg>
+<msg time="2025-06-10T10:20:05.811677" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/tvOnboardPermissionSkip"]</msg>
+<arg>//android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/tvOnboardPermissionSkip"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-06-10T10:20:05.595666" elapsed="0.216436"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:08.931312" level="INFO">xpath criteria: //android.view.ViewGroup[@resource-id="com.telkomsel.telkomselcm:id/headerContent"]
+xpath criteria: //android.view.ViewGroup[@resource-id="com.telkomsel.telkomselcm:id/headerContent"]</msg>
+<arg>//android.view.ViewGroup[@resource-id="com.telkomsel.telkomselcm:id/headerContent"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-06-10T10:20:05.814117" elapsed="3.117713"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:08.936175" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.telkomsel.telkomselcm:id/btn_login"]'.</msg>
+<msg time="2025-06-10T10:20:10.602680" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.telkomsel.telkomselcm:id/btn_login"]</msg>
+<arg>//android.widget.Button[@resource-id="com.telkomsel.telkomselcm:id/btn_login"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-06-10T10:20:08.933631" elapsed="1.669383"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:12.255255" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/title" and @text="Masuk dengan Nomor Telkomsel"]</msg>
+<arg>//android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/title" and @text="Masuk dengan Nomor Telkomsel"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-06-10T10:20:10.603681" elapsed="1.652083"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:12.259773" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/title" and @text="Masuk dengan Nomor Telkomsel"]'.</msg>
+<msg time="2025-06-10T10:20:12.466488" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/title" and @text="Masuk dengan Nomor Telkomsel"]</msg>
+<arg>//android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/title" and @text="Masuk dengan Nomor Telkomsel"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-06-10T10:20:12.257238" elapsed="0.209794"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:13.819336" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/tvTitle"]
+xpath criteria: //android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/tvTitle"]</msg>
+<arg>//android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/tvTitle"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-06-10T10:20:12.468286" elapsed="1.351569"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:13.823128" level="INFO">Typing text '000000000' into text field '//android.widget.EditText[@resource-id="com.telkomsel.telkomselcm:id/etLoginForm"]'</msg>
+<msg time="2025-06-10T10:20:13.955826" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.telkomsel.telkomselcm:id/etLoginForm"]</msg>
+<arg>//android.widget.EditText[@resource-id="com.telkomsel.telkomselcm:id/etLoginForm"]</arg>
+<arg>000000000</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-06-10T10:20:13.821035" elapsed="0.135265"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:14.989731" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/tvLoginFormError"]</msg>
+<arg>//android.widget.TextView[@resource-id="com.telkomsel.telkomselcm:id/tvLoginFormError"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-06-10T10:20:13.957001" elapsed="1.033057"/>
+</kw>
+<kw name="Clear Text" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:14.993417" level="INFO">Clear text field '//android.widget.EditText[@resource-id="com.telkomsel.telkomselcm:id/etLoginForm"]'</msg>
+<msg time="2025-06-10T10:20:15.094718" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.telkomsel.telkomselcm:id/etLoginForm"]</msg>
+<arg>//android.widget.EditText[@resource-id="com.telkomsel.telkomselcm:id/etLoginForm"]</arg>
+<doc>Clears the text field identified by `locator`.</doc>
+<status status="PASS" start="2025-06-10T10:20:14.991209" elapsed="0.103788"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:15.097731" level="INFO">Typing text '08132112342' into text field '//android.widget.EditText[@resource-id="com.telkomsel.telkomselcm:id/etLoginForm"]'</msg>
+<msg time="2025-06-10T10:20:16.513818" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.telkomsel.telkomselcm:id/etLoginForm"]</msg>
+<arg>//android.widget.EditText[@resource-id="com.telkomsel.telkomselcm:id/etLoginForm"]</arg>
+<arg>08132112342</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-06-10T10:20:15.095790" elapsed="1.418642"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-06-10T10:20:16.518865" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.telkomsel.telkomselcm:id/btSecondTypePrimary"]'.</msg>
+<msg time="2025-06-10T10:20:17.219956" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.telkomsel.telkomselcm:id/btSecondTypePrimary"]</msg>
+<arg>//android.widget.Button[@resource-id="com.telkomsel.telkomselcm:id/btSecondTypePrimary"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-06-10T10:20:16.515461" elapsed="0.704902"/>
+</kw>
+<kw name="Go Back" owner="AppiumLibrary" type="TEARDOWN">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="PASS" start="2025-06-10T10:20:17.221581" elapsed="0.401662"/>
+</kw>
+<status status="PASS" start="2025-06-10T10:19:39.602831" elapsed="38.021528"/>
+</test>
+<doc>Test suite for testing login functionality</doc>
+<status status="PASS" start="2025-06-10T10:19:39.319369" elapsed="38.307350"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login Tsel Tests">Login Tsel Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
